@@ -1,0 +1,59 @@
+header{
+    top: 0;
+    position: sticky;
+    background:linear-gradient(to left, #00000057, #000);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    border-radius: 50px;
+    z-index: 100;
+
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* a links in the header */
+header a{
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: monospace;
+    transition: all 0.3s ease;
+}
+
+header a:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* reach us btn */
+#reach-us{
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    background: rgba(92, 92, 94, 0.808) ;
+    backdrop-filter: blur(10px);
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#reach-us:hover{
+    color: rgb(131, 131, 238);
+    border-color: rgb(131, 131, 238);
+}
+/* logo */
+.logo {
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-size: 32px;
+    color: rgba(250, 235, 215, 0.822);
+}
+
+/* italics myself */
+#myself{
+    color: rgb(131, 131, 238);
+}
