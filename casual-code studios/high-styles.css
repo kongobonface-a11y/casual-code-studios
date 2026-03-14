@@ -1,0 +1,96 @@
+@import url(/styles/high-header.css);
+@import url(/styles/high-section1.css);
+@import url(/styles/high-section2.css);
+@import url(/styles/high-section3.css);
+@import url(/styles/high-btwSection.css);
+@import url(/styles/high-footer.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom, #000000b6, #00000050), url(/images/vecteezy_black-and-gold_AD0321.jpg) repeat;
+    background-position: center;
+}
+
+.section{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    color: antiquewhite;
+    width: 100%;
+}
+ #section-3{
+    padding: 30px 10px;
+    margin: 0;
+ }
+
+
+
+/* phone responsive */
+ @media (max-width: 800px){
+    /* main header */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header a{
+        font-size: 16px;
+    }
+    #help, #home{
+        display: none;
+
+    }
+
+    /* sections */
+    .section{
+        overflow: auto;
+    }
+
+    /* section 3 <the divs in the about section> */
+    #section-3 .creative, .outside-life{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* footer */
+    .contacts-wrapper{
+        flex-direction: column;
+    }
+    .useful-links h3{
+        text-align: center;
+    }
+    .useful-links ul{
+        flex-direction: row;
+    }
+    
+ 
+}
+@media (max-width:600px ){
+    #section-1 .profile p:first-child{
+        display: none;
+    }
+
+}
+ @media (max-width: 360px){
+    #section-1 .profile p{
+        display: none;
+    }
+    .experience{
+        display: none;
+    }
+}
+@media (max-width:320px){
+    #myself{
+        display: none;
+    }
+}
